@@ -11,6 +11,12 @@
 </head>
 
 <body>
+
+    <input id="close-menu" class="close-menu" type="checkbox"
+    aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu"
+    title="Close Menu"></label>
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1>
@@ -18,7 +24,7 @@
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -302,6 +308,8 @@
         <p><a href="https://www.instagram.com/kalineconstantino/">
             Feito com <span class="heart">❤</span> por Kaline Cecília</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 
 </body>
 </html>
